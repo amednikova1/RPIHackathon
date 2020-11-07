@@ -1,5 +1,4 @@
 header {
-    text-align: center;
     background-color: lightblue;
     opacity: 0.5;
     padding: 10px 0 25px 0;
@@ -101,4 +100,39 @@ form input[type="submit"] {
 
 #myBtn:hover {
     background-color: lightblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
+}
+
+nav li {
+    margin-top: 12px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 100px;
+    font-size: 25px;
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    opacity: .5;
+}
+
+nav a:hover {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
 }
