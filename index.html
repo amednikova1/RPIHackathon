@@ -19,35 +19,63 @@
 <body>
 
     <header>
-        <h1>RPI HACKATHON</h1>
+        <div class="container">
+            <h1>RPI HACKATHON</h1>
+        </div>
     </header>
 
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="DOB">DOB (mm/dd/yyyy)</label><br>
-        <input type="text" id="DOB" name="DOB"><br><br>
-        <input type="submit" value="Submit"> <br><br>
 
-        <input type="radio" id="symptom1" name="symptom1" value="Cough">
-        <label for="symptom1"> Cough </label><br>
-        <input type="radio" id="symptom2" name="symptom2" value="Fever">
-        <label for="symptom2"> Fever </label><br>
-        <input type="radio" id="symptom3" name="symptom3" value="Headache">
-        <label for="symptom3"> Headache</label><br>
-        <input type="radio" id="symptom4" name="symptom4" value="Fatigue">
-        <label for="symptom4"> Fatigue </label><br>
-        <input type="radio" id="symptom5" name="symptom5" value="Aches">
-        <label for="symptom5"> Muscle/Body Aches </label><br>
-        <input type="radio" id="symptom6" name="symptom6" value="TasteSmell">
-        <label for="symptom6"> Loss of Taste or Smell</label><br>
-        <input type="radio" id="symptom7" name="symptom7" value="nose">
-        <label for="symptom7"> Runny Nose</label><br>
-        <input type="submit" value="Submit">
+    <section id="form">
+        <form>
+            <div id="name">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="DOB">DOB (mm/dd/yyyy):</label><br>
+            <input type="text" id="DOB" name="DOB"><br><br>
+            </div>
 
-    </form>
+            <div class="cont">
+                <p id=symptoms>SYMPTOMS</p>
+            </div>
+
+            <div id="sympt">
+                <div class="left">
+                    <input type="checkbox" id="symptom1" name="symptom1" value="Cough">
+                    <label for="symptom1"> Cough </label>
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="symptom2" name="symptom2" value="Fever">
+                    <label for="symptom2"> Fever </label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom3" name="symptom3" value="Headache">
+                    <label for="symptom3"> Headache</label>
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="symptom4" name="symptom4" value="Fatigue">
+                    <label for="symptom4"> Fatigue </label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom5" name="symptom5" value="Aches">
+                    <label for="symptom5"> Muscle/Body Aches </label>
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="symptom6" name="symptom6" value="TasteSmell">
+                    <label for="symptom6"> Loss of Taste or Smell</label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom7" name="symptom7" value="nose">
+                    <label for="symptom7"> Runny Nose</label>
+                </div>
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
 
 
 
