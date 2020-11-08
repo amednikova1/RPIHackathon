@@ -6,17 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> TITLE</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
+    <title>TITLE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='main.js' defer></script>
+    <link type="text/css" href="/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,13 +23,21 @@
 
     <section id="form">
         <form>
+            <div class="cont">
+                <p id=symptoms>Region</p>
+            </div>
             <div id="name">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="DOB">DOB (mm/dd/yyyy):</label><br>
-                <input type="text" id="DOB" name="DOB"><br><br>
+                <input type="CheckBox" id="US" name="US">
+                <label for="US" >United States</label><br><br>
+                <input type="CheckBox" id="UK" name="UK">
+                <label for="UK" >United Kingdom</label><br>
+                <div class="cont">
+                    <p id=symptoms>Personal Information</p>
+                </div>
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age"><br>
+                <label for="BMI">BMI (kg m-2):</label><br>
+                <input type="text" id="BMI" name="BMI"><br><br>
             </div>
 
             <div class="cont">
@@ -45,38 +46,61 @@
 
             <div id="sympt">
                 <div class="left">
-                    <input type="checkbox" id="symptom1" name="symptom1" value="Cough">
-                    <label for="symptom1"> Cough </label>
+                    <input type="checkbox" id="symptom1" name="symptom1" value="LOTOS">
+                    <label for="symptom1"> Loss of Taste or Smell </label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom2" name="symptom2" value="Fever">
-                    <label for="symptom2"> Fever </label>
+                    <input type="checkbox" id="symptom2" name="symptom2" value="Fatigue">
+                    <label for="symptom2"> Fatigue </label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom3" name="symptom3" value="Headache">
-                    <label for="symptom3"> Headache</label>
+                    <input type="checkbox" id="symptom3" name="symptom3" value="SOB">
+                    <label for="symptom3"> Shortness of Breath</label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom4" name="symptom4" value="Fatigue">
-                    <label for="symptom4"> Fatigue </label>
+                    <input type="checkbox" id="symptom4" name="symptom4" value="Fever">
+                    <label for="symptom4"> Fever </label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom5" name="symptom5" value="Aches">
-                    <label for="symptom5"> Muscle/Body Aches </label>
+                    <input type="checkbox" id="symptom5" name="symptom5" value="PersistentCough">
+                    <label for="symptom5"> Persistent Cough </label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom6" name="symptom6" value="TasteSmell">
-                    <label for="symptom6"> Loss of Taste or Smell</label>
+                    <input type="checkbox" id="symptom6" name="symptom6" value="Diarrhea">
+                    <label for="symptom6"> Diarrhea</label>
                 </div>
                 <div class="left">
-                    <input type="checkbox" id="symptom7" name="symptom7" value="nose">
-                    <label for="symptom7"> Runny Nose</label>
+                    <input type="checkbox" id="symptom7" name="symptom7" value="Dilirium">
+                    <label for="symptom7"> Dilirium</label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom8" name="symptom8" value="SkippedMeals">
+                    <label for="symptom1"> Skipped Meals </label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom9" name="symptom9" value="AbdomialPain">
+                    <label for="symptom2"> Abdomial Pain </label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom10" name="symptom10" value="ChestPain">
+                    <label for="symptom3"> Chest Pain </label>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="symptom11" name="symptom11" value="HoarseVoice">
+                    <label for="symptom4"> Hoarse Voice </label>
                 </div>
             </div>
 
             <div id="submit">
-                <input type="submit" value="Submit">
+                <input type="submit" onclick= checkbox(); value="Submit">
             </div>
+
+            <div>
+                <p id= "covidoutput">
+
+                </p>
+            </div>
+            
         </form>
     </section>
 
